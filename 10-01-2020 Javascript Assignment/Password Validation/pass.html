@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        
+        <div class = "container"><br>
+            <h1 class="text-success text-center"> Complete Form Validation in JavaScript </h1><br> 
+            <div class="col-lg-8 m-auto d-block">
+
+                <form action="#" onsubmit="return validation()" id="login">
+                
+                    <div class="form-group">
+                        <label>Username: </label>
+                        <input type="text" name="user" class="form-control" id="user" autocomplete="off">
+                        <span id = "username" class="text-danger font-weight-bold"> </span>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Password: </label>
+                        <input type="password" name="pass" class="form-control" id="pass" autocomplete="off">
+                        <span id = "password" class="text-danger font-weight-bold"> </span>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Confirm Password: </label>
+                        <input type="password" name="conpass" class="form-control" id="conpass" autocomplete="off">
+                        <span id = "confirmpass" class="text-danger font-weight-bold"> </span>
+                    </div>
+
+                    <input type="submit" value="Submit" name="Submit" class="btn btn-success" autocomplete="off">
+
+                    <div class="guidelines">
+                        <label><br>* Password Guidelines<br>1. It should be minimum of 8 characters.<br>2. It should start with abc.<br>3. It should contain one lowercase alphabet.<br>4. It should contain one uppercase alphabet.<br>5. It should have one digit.<br>6. It should contain one special symbol.</label>
+                    </div>
+                
+                </form>
+            </div>
+        </div>
+
+        <script src="validation.js"></script>
+
+    </body>
+</html>

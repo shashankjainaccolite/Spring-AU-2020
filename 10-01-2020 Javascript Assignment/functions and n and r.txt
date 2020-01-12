@@ -1,0 +1,174 @@
+var a = 'Shashank';
+var b = 'Jain';
+console.log(a.concat(b));
+
+Answer : ShashankJain
+
+
+a = [1,2,3,4];
+b = [3,4,5,6];
+console.log(a.concat(b));
+
+Answer : [1, 2, 3, 4, 3, 4, 5, 6]
+
+
+console.log('Check if every person in the group is eligible to vote or not');
+a = [18,29,32,78,67,73];
+console.log(a.every((age) => age >= 18));
+
+Answer : Check if every person in the group is eligible to vote or not
+	 true
+
+
+var heroes = [
+	{name: 'Batman', franchise: 'DC'},
+	{name: 'Ironman', franchise: 'Marvel'},
+	{name: 'Thor', franchise: 'Marvel'},
+	{name: 'Superman', franchise: 'DC'}
+];
+
+var marvelHeroes =  heroes.filter((hero) => hero.franchise == 'Marvel');
+
+console.log(marvelHeroes);
+
+
+Answer : (2) [{…}, {…}]
+		0: {name: "Ironman", franchise: "Marvel"}
+		1: {name: "Thor", franchise: "Marvel"}
+		length: 2
+		__proto__: Array(0)
+
+
+var product = 1;
+var numbers = [7,6,5,3,2];
+numbers.forEach((item) => {
+    product *= item;
+})
+console.log(product);
+
+Answer : 1260
+
+
+
+var quote = "Tomorrow is the session for React - a frontend development framework for Javascript";
+console.log(quote.indexOf('the'));
+
+Answer : 12
+
+
+var a = ['Java','Javascript','C-Sharp','HTML','CSS'];
+console.log(a.join(' * '));
+
+Answer : Java * Javascript * C-Sharp * HTML * CSS
+
+
+var quote = "Tomorrow is the session for React - a frontend development framework for the Javascript";
+console.log(quote.lastIndexOf('the'));
+
+Answer : 73
+
+
+
+var a = [12,76,34,-7,92];
+console.log('The array after dividing by 2 becomes');
+a = a.map((item) => item /= 2);
+console.log(a);
+
+Answer : The array after dividing by 2 becomes
+	 [6, 38, 17, -3.5, 46]
+
+
+var a = ['Shashank','Dheeraj','Manoj','Saroj','Shivam'];
+a.pop();
+console.log(a);
+
+
+Answer : ["Shashank", "Dheeraj", "Manoj", "Saroj"]
+
+
+var a = ['Shashank','Dheeraj','Manoj','Saroj','Shivam'];
+a.push('Piyush');
+console.log(a);
+
+Answer : ["Shashank", "Dheeraj", "Manoj", "Saroj", "Shivam", "Piyush"]
+
+
+var money = [11.3,22.6,76.4,12.87,76.87];
+console.log(money.reduce((total, amount) => Math.round(total + amount)));
+
+Answer : 200
+
+
+const A = [ [ 1, 2, 3 ], [ 4, 5, 6 ], [ 7, 8 ] ]; 
+a = A.reduceRight((previousValue, currentValue) => previousValue.concat(currentValue));
+console.log(a);
+
+Answer : [7, 8, 4, 5, 6, 1, 2, 3]
+
+
+var a = [7,9,'Piyush',7,98,'Shivam'];
+console.log(a.reverse());
+
+Answer : ["Shivam", 98, 7, "Piyush", 9, 7]
+
+
+var a = ['Shashank','Dheeraj','Manoj','Saroj','Shivam'];
+a.shift();
+console.log(a);
+
+Answer : ["Dheeraj", "Manoj", "Saroj", "Shivam"]
+
+
+var a = [7,8,'Piyush','Shivam',10,11,12];
+a = a.slice(2,4);
+console.log(a);
+
+Answer : ["Piyush", "Shivam"]
+
+
+
+var a = [18,9,23,10,12];
+console.log('Is there anyone eligible in the group to vote?');
+console.log(a.some((item) => item >= 18));
+
+Answer : Is there anyone eligible in the group to vote?
+	 true
+
+
+
+var array = ['Barcelona','Real Madrid','Athletico','Manchester City','Manchester United'];
+console.log(array.sort());
+
+Answer : ["Athletico", "Barcelona", "Manchester City", "Manchester United", "Real Madrid"]
+
+
+
+var a = [7,8,'Piyush','Shivam',10,11,12];
+a.splice(2,2,9);
+console.log(a);
+
+Answer : [7, 8, 9, 10, 11, 12]
+
+
+
+var array = [1,2,3,4,5,6,7,8,9,10];
+console.log('The numbers are ' + array.toString());
+
+Answer : The numbers are 1,2,3,4,5,6,7,8,9,10
+
+
+
+var a = ['Shashank','Dheeraj','Manoj','Saroj','Shivam'];
+a.unshift('Piyush');
+console.log(a);
+
+Answer : ["Piyush", "Shashank", "Dheeraj", "Manoj", "Saroj", "Shivam"]
+
+
+
+\n is used when we want to move to next line. It is similar to 'Enter' key.
+\r is used when we want to move the cursor at the start of current line. It is similar to 'PageUp' key on same instinct. Also in MacOS \r is used as line ending.
+
+
+
+

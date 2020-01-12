@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link rel = "stylesheet" href="style.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        
+        <div class = "container"><br>
+            <h1 class="text-success text-center"> Form Options and Sort </h1><br> 
+            <div class="col-lg-8 m-auto d-block">
+
+                <form action="#" onsubmit="return validation()" id="login">
+                
+                    <div class="form-group">
+                        <label>Name </label>
+                        <input type="text" name="user" class="form-control" id="user" autocomplete="off">
+                        <span id = "username" class="text-danger font-weight-bold"> </span>
+                        <p><br></p>
+                    </div>
+
+                    <form>
+                        Select your Country:
+                        <select id="myList" onchange="country()">
+                            <option></option>
+                            <option>India</option>
+                            <option>Australia</option>
+                            <option>USA</option>
+                            <option>Japan</option>
+                        </select>
+                        <p><br></p>
+                        <!-- <p>Your country is <input type="text" id = "favorite" size="20"></p> -->
+                    </form>
+
+                    <div class="form-group">
+                        <label>Username </label>
+                        <input type="text" name="user" class="form-control" id="myInput" autocomplete="off" onkeyup="myFunction()" placeholder="Search for username" title="Type in a name">
+                        <span id = "username" class="text-danger font-weight-bold"> </span>
+                    </div>
+
+                    <div>
+                    <ul id="myUL">
+                        <li><a href="#">John Wick</a></li>
+                        <li><a href="#">Disgrace</a></li>
+                      
+                        <li><a href="#">Moochwala12</a></li>
+                        <li><a href="#">Babumoshay</a></li>
+                      
+                        <li><a href="#">Cheeku</a></li>
+                        <li><a href="#">LeaveMeAlone</a></li>
+                        <li><a href="#">Cindrella</a></li>
+                      </ul>
+                    </div>
+
+                    <div>
+                    <p><br><br>Click the button to sort the below list alphabetically:</p>
+                    <button onclick="sortList()" class="btn btn-success" >Sort</button>
+                    </div>
+
+                    <ul id="companyList">
+                        <li><a href="#">Morgan Stanley</a></li>
+                        <li><a href="#">Goldman Sachs</a></li>
+                      
+                        <li><a href="#">Thoughtworks</a></li>
+                        <li><a href="#">British Telecom</a></li>
+                      
+                        <li><a href="#">Prudential</a></li>
+                        <li><a href="#">Accolite</a></li>
+                        <li><a href="#">Atlassian</a></li>
+                      </ul>
+                    </div>
+
+                    
+                
+                </form>
+            </div>
+        </div>
+
+        <script src = "function.js"></script>
+
+    </body>
+</html>
