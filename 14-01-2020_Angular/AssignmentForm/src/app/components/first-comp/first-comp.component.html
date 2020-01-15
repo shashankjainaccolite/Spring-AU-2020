@@ -1,0 +1,19 @@
+<style>
+  .submit:hover {
+    cursor: pointer;
+  }
+</style>
+<h2>Registration Form :</h2>
+<div class="main" style="height: 220px; width: 250px;">
+  <form [formGroup]="regForm" >
+    <input type="text" style="text-align: center; height: 25px;" placeholder="First Name" formControlName ="fname" AutoComplete="Off"/><br/><br/>
+    <input type="text" style="text-align: center; height: 25px;" placeholder="Last Name" formControlName ="lname" AutoComplete="Off"/><br/><br/>
+    <input type="email" style="text-align: center; height: 25px;" placeholder="Email" formControlName ="email" AutoComplete="Off" ngModel [email]="true"/><br/><br/>
+
+    <input type="text" style="text-align: center; height: 25px;" placeholder="Gender" formControlName ="gender" AutoComplete="Off"/><br/><br/>
+
+    <div class="Nosubmit" *ngIf="regForm.value.fname.length==0 || regForm.value.lname.length==0 || regForm.value.email.length==0 || regForm.value.gender.length==0" style="background-color:white;height:25px;width: 150px;color:grey;font-size: 12px;padding-top: 10px; border-radius: 5px;margin-left: 50px;">SUBMIT</div>
+    <div class="submit" *ngIf="regForm.value.fname.length!=0 && regForm.value.lname.length!=0 && regForm.value.email.length!=0 && regForm.value.gender.length!=0" style="background-color:lightblue;height:25px;width: 150px;color:white;font-size: 12px;padding-top: 10px; border-radius: 5px;margin-left: 50px;" (click)="send()">SUBMIT</div><br/>
+    <a style="text-decoration: none;" routerLink="/Details"><div class="details" style="background-color: red;height:25px;width: 150px;color:white;font-size: 12px;padding-top: 10px; border-radius: 5px;margin-left: 50px;">See All Entries</div></a>
+  </form>
+</div>

@@ -1,0 +1,20 @@
+<style>
+  .submit:hover {
+    cursor: pointer;
+  }
+</style>
+
+<p style="margin-top: 4%; text-align: center;">The various details entered are : </p>
+<div class="main" style="text-align: center; padding: 30px; height: 400px; width: 80%;">
+  <h1 *ngIf="data.length==0">Please enter data before you want to see</h1>
+  <table *ngIf="data.length!=0" >
+    <th>First Name</th>
+    <th>Second Name</th>
+    <th>Email</th>
+    <th>Gender</th>
+    <tr *ngFor="let item of data">
+    <td *ngFor="let value of item" >{{ value }}</td>
+    </tr>
+  </table>
+  <a style="text-decoration: none;" routerLink="/"><div class="details" style="background-color: red;height:25px;width: 150px;color:white;font-size: 12px;padding-top: 10px;margin-left: 45%;">Return to Form</div></a>
+</div>
