@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-3.1.xsd">
+           
+           <bean id = "c1" class = "com.model.Company">
+           <property name = "name" value = "Accolite"></property>
+           <property name="establishedYear" value = "2009"></property>
+           </bean>
+           
+           <bean id = "c2" class = "com.model.Company">
+           <property name = "name" value = "Infosys"></property>
+           <property name="establishedYear" value = "1981"></property>
+           </bean>
+           
+           <bean id = "c3" class = "com.model.Company">
+           <property name = "name" value = "Amazon"></property>
+           <property name="establishedYear" value = "1994"></property>
+           </bean>
+           
+           <bean id = "c4" class = "com.model.Company">
+           <property name = "name" value = "Google"></property>
+           <property name="establishedYear" value = "1998"></property>
+           </bean>
+           
+           <bean id = "companyMap" class = "com.model.CompanyList">
+           <property name = "companyMap">
+           <map>
+           <entry key = "1" value-ref = "c1"></entry>
+           <entry key = "2" value-ref = "c2"></entry>
+           <entry key = "3" value-ref = "c3"></entry>
+           <entry key = "4" value-ref = "c4"></entry>
+           </map>
+           </property>
+           </bean>          
+           
+</beans>
